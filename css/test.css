@@ -1,0 +1,41 @@
+
+
+/* Basic styling for the video container */
+.video-background {
+    position: relative;
+    height: 100vh; /* Full screen height */
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Styling for the video itself */
+  #bgVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Puts the video behind the content */
+    background-size: cover;
+  }
+  
+  /* Styling for content over the video */
+  .content {
+    position: relative;
+    z-index: 1; /* Ensures content stays above the video */
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+  }
+  
