@@ -92,7 +92,7 @@
 }
 
 #about{
-  background-image: url(/assets/img/about-us.jpg);
+  background-image: url();
   background-repeat: repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10908,15 +10908,8 @@ p {
   color: #ffc800;
   font-size: 1.2rem;
 }
-@media (min-width: 350px) {
-  #mainNav .navbar-brand{
-    height: 36px;
-  }
-  #mainNav .navbar-brand img{
-    height: 120%;
-  }
-}
-@media (min-width: 300px) {
+
+@media (min-width: 320px) {
   #mainNav .navbar-brand{
     height: 36px;
   }
@@ -10927,7 +10920,6 @@ p {
     margin-top: -100px;
   }
 }
-
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 1.5rem;
@@ -10941,6 +10933,7 @@ p {
     transition: font-size 0.3s ease-in-out;
     position: relative;
     display: inline-block;
+    height: 120px;
 
   }
   #mainNav .navbar-brand::before{
@@ -10966,7 +10959,7 @@ p {
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
-    height: 80px;
+    height: 100px;
     transition: 0.3s ease-out;
   }
   #mainNav.navbar-shrink .navbar-brand svg,
@@ -10978,6 +10971,9 @@ p {
   }
   #mainNav .navbar-nav .nav-item:last-child {
     margin-right: 0;
+  }
+  header.masthead .uppercontent {
+    margin-top: 150px;
   }
 }
 header.masthead {
@@ -10993,7 +10989,7 @@ header.masthead {
 }
 
 header.masthead .container{
-  margin-top: 300px;
+  margin-top: 400px;
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
@@ -11004,7 +11000,7 @@ header.masthead .masthead-subheading {
   /* backdrop-filter: blur(10px); */
 }
 header.masthead .masthead-heading {
-  font-size: 3.25rem;
+  font-size: 2.25rem;
   font-weight: 700;
   line-height: 3.25rem;
   margin-bottom: 2rem;
@@ -11023,11 +11019,19 @@ header.masthead .masthead-heading {
     margin-bottom: 2rem;
   }
   header.masthead .masthead-heading {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     font-weight: 700;
     line-height: 4.5rem;
     margin-bottom: 4rem;
   }
+  header.masthead .uppercontent {
+    margin-top: 255px;
+  }
+}
+@media (min-width: 1000px) {
+  header.masthead .uppercontent {
+    margin-top: 325px;
+}
 }
 
 
