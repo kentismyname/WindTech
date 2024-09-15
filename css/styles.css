@@ -11012,7 +11012,7 @@ header.masthead .masthead-heading {
 }
 
 #services{
-  background-image: url(/assets/img/AI-hands.jpg);
+  background-image: url(./assets/img/AI-hands.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
