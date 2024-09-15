@@ -11005,7 +11005,7 @@ header.masthead .masthead-heading {
 
 
 #overview{
-  background-image: url(/assets/img/map-image.jpg);
+  background-image: url(../assets/img/map-image.jpg);
   background-repeat: no-repeat;
   background-position: bottom left;
   /* background-size: cover; */
