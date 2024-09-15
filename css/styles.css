@@ -91,6 +91,14 @@
   }
 }
 
+#about{
+  background-image: url(/assets/img/about-us.jpg);
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -10869,8 +10877,8 @@ p {
   padding-top: 1rem;
   padding-bottom: 1rem;
   background-color: #212529;
-  padding-left: 300px;
-  padding-right: 300px;
+  /* padding-left: 300px; */
+  /* padding-right: 300px; */
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
@@ -10899,6 +10907,25 @@ p {
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #ffc800;
   font-size: 1.2rem;
+}
+@media (min-width: 350px) {
+  #mainNav .navbar-brand{
+    height: 36px;
+  }
+  #mainNav .navbar-brand img{
+    height: 120%;
+  }
+}
+@media (min-width: 300px) {
+  #mainNav .navbar-brand{
+    height: 36px;
+  }
+  #mainNav .navbar-brand img{
+    height: 110%;
+  }
+  header.masthead .uppercontent{
+    margin-top: -100px;
+  }
 }
 
 @media (min-width: 992px) {
