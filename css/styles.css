@@ -10,6 +10,8 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -77,6 +79,10 @@
   --bs-link-hover-color: #cca000;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff4cc;
+}
+.masthead-subheading span{
+  color: #ffd900;
+  font-weight: 800;
 }
 
 *,
@@ -3776,6 +3782,7 @@ textarea.form-control-lg {
 .navbar-brand {
   border-radius: 30px;
   height: 120px;
+  border-right: #FFD700 5px;
 }
 .navbar-brand:hover, .navbar-brand:focus {
 
@@ -10848,11 +10855,12 @@ p {
   margin-bottom: 1rem;
 }
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 400;
   font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-bottom: 4rem;
+  color: ;
 }
 
 @media (min-width: 768px) {
@@ -10900,6 +10908,10 @@ p {
 }
 #mainNav .navbar-brand img {
   height: 1.5rem;
+  border-bottom: solid #FFD700 1px;
+  border-right: solid #FFD700 1px;
+  border-radius: 10px;
+
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -11329,7 +11341,8 @@ section#contact {
   background-size: cover;
 }
 section#contact .section-heading {
-  color: #fff;
+  color: #000;
+  margin-bottom: 150px;
 }
 section#contact form#contactForm .form-group {
   margin-bottom: 1.5rem;
@@ -11477,11 +11490,12 @@ section#contact form#contactForm :-ms-input-placeholder {
   border-radius: 10px;
   position: relative;
   overflow: hidden;
+  height: 320px;
 }
 
 .work img {
   width: 450px;
-  height: 250px;
+  height: 280px;
   border-radius: 10px;
   display: block;
   transition: transform 0.5s;
