@@ -3784,10 +3784,6 @@ textarea.form-control-lg {
   height: 120px;
   border-right: #FFD700 5px;
 }
-.navbar-brand:hover, .navbar-brand:focus {
-
-}
-
 .navbar-nav {
   --bs-nav-link-padding-x: 0;
   --bs-nav-link-padding-y: 0.5rem;
@@ -10860,7 +10856,6 @@ p {
   font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-bottom: 4rem;
-  color: ;
 }
 
 @media (min-width: 768px) {
