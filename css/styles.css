@@ -12,6 +12,57 @@
  */
 
 
+
+
+ /* back to top animation */
+.back-to-top{
+  width: 50px;
+  height: 50px;
+  animation: moveUp 2s infinite;
+}
+@keyframes moveUp {
+  0% {
+    transform: translateY(-20);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* twitter style */
+
+#lottie-twitter, #lottie-facebook, #lottie-linkedin {
+  margin-top: -13px;
+}
+
+
+
+
+
+ 
+ /* arrow up animation */
+ .arrow {
+  margin-top: -80px;
+  width: 50px;
+  height: 50px;
+  animation: moveDown 2s infinite;
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(-20);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11557,16 +11608,21 @@ section#contact form#contactForm :-ms-input-placeholder {
   display: block;
   margin: 50px auto;
   width: fit-content;
-  padding: 14px 50px;
+  padding: 14px 40px;
+  border-color: #0d6efd;
+  border-width: 2px;
   border-radius: 6px;
   text-decoration: none;
-  color: #ffffff; /* Light text color */
-  background: #003366; /* Dark blue background */
-  transition: background 0.5s;
+  color: black; /* Light text color */
+  background: #ffffff; 
+  transition: border-color 0.5s;
 }
 
 .btn:hover {
-  background: #002244; /* Darker blue on hover */
+  color: #ffffff;
+  border-color: #ffffff;
+
+
 }
 
 
