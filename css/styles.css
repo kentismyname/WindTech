@@ -1,16 +1,23 @@
 @charset "UTF-8";
-/*!
-* Start Bootstrap - Agency v7.0.12 (https://startbootstrap.com/theme/agency)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
-*/
-/*!
- * Bootstrap  v5.2.3 (https://getbootstrap.com/)
- * Copyright 2011-2022 The Bootstrap Authors
- * Copyright 2011-2022 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 
+
+
+/* for sliding text animation */
+ header.masthead .uppercontent div{
+  font-family: 'Arial', sans-serif;
+  /* white-space: nowrap;  */
+  animation: slide-in-left 1s ease-in-out; 
+ }
+ @keyframes slide-in-left {
+  0% {
+      transform: translateX(-100%); /* Start fully off-screen from the left */
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0); /* End at its original position */
+      opacity: 1;
+  }
+}
 
 
 
@@ -10981,6 +10988,7 @@ p {
   }
   header.masthead .uppercontent{
     margin-top: -100px;
+    overflow: hidden;
   }
 }
 @media (min-width: 992px) {
@@ -11037,6 +11045,7 @@ p {
   }
   header.masthead .uppercontent {
     margin-top: 150px;
+    overflow: hidden;
   }
 }
 header.masthead {
@@ -11089,11 +11098,13 @@ header.masthead .masthead-heading {
   }
   header.masthead .uppercontent {
     margin-top: 255px;
+    overflow: hidden;
   }
 }
 @media (min-width: 1000px) {
   header.masthead .uppercontent {
     margin-top: 325px;
+    overflow: hidden;
 }
 }
 
@@ -11596,12 +11607,31 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: #ffffff; /* Light text color on hover */
 }
 
-.work:hover img {
+@keyframes scaleAnimation {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+#work1 {
+  display: inline-block;
+  animation: scaleAnimation 0.8s infinite; /* Set animation on the parent */
+}
+
+#work1:hover {
+  animation: none; /* Stop animation on hover */
   transform: scale(1.1);
 }
 
 .work:hover .layer {
   height: 100%;
+  
 }
 
 .btn {

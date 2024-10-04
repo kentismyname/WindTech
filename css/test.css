@@ -1,41 +1,26 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
+.spacer {
+  height: 800px; /* Create space above and below the sliding text */
+}
 
-/* Basic styling for the video container */
-.video-background {
-    position: relative;
-    height: 100vh; /* Full screen height */
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  /* Styling for the video itself */
-  #bgVideo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    transform: translate(-50%, -50%);
-    z-index: -1; /* Puts the video behind the content */
-    background-size: cover;
-  }
-  
-  /* Styling for content over the video */
-  .content {
-    position: relative;
-    z-index: 1; /* Ensures content stays above the video */
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  h1 {
-    font-size: 3rem;
-  }
-  
-  p {
-    font-size: 1.5rem;
-  }
-  
+.sliding-text {
+  text-align: center;
+}
+
+#slideText {
+  font-size: 2.5rem;
+  white-space: nowrap; 
+  opacity: 0; /* Initially hidden */
+  transform: translateX(0); /* Start off-screen to the left */
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.slide-in {
+  opacity: 1; /* Fully visible */
+  transform: translateX(-100%); /* Move to original position */
+}

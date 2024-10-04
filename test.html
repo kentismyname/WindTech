@@ -3,58 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SVG and Lottie Example</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            text-align: center;
-        }
-        .twitter-icon {
-            margin-bottom: 20px;
-        }
-        svg {
-            width: 50px;
-            height: 50px;
-            fill: #1da1f2; /* Twitter blue */
-        }
-        #lottie-twitter {
-            width: 200px;
-            height: 200px;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Scroll-triggered Sliding Text</title>
+    <link rel="stylesheet" href="./css/test.css">
 </head>
 <body>
-
-    <div class="container">
-        <!-- Inline SVG Icon -->
-        <div class="twitter-icon">
-            
-        </div>
-
-        <!-- Lottie Animation -->
-        <div id="lottie-twitter"></div>
+    <div class="spacer"></div>
+    <div class="sliding-text">
+        <h1 id="slideText">Hello, Welcome to My Website!</h1>
     </div>
+    <div class="spacer"></div>
 
-    <!-- Lottie Animation Script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
-    <script>
-        var animation = lottie.loadAnimation({
-            container: document.getElementById('lottie-twitter'), // ID of the container
-            renderer: 'svg', // Render using 'svg' for vector graphics
-            loop: true,      // Set to 'false' if you want the animation to play only once
-            autoplay: true,  // Set to true to start the animation automatically
-            path: 'twitter.json' // Example Lottie JSON file URL
-        });
-    </script>
-
+    <script src="./js/test.js"></script>
 </body>
 </html>
