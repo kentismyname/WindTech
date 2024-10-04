@@ -19,7 +19,16 @@
   }
 }
 
+/* ...................... */
 
+#blur_bg{
+  background: rgba(255, 255, 255, 0.2); /* semi-transparent background */
+  border-radius: 10px;
+  padding: 20px;
+  /* backdrop-filter: blur(10px);  */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 
  /* back to top animation */
 .back-to-top{
