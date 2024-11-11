@@ -11583,7 +11583,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 40px;
+  padding: 0 15px;
   text-align: center;
   font-size: 14px;
   transition: height 0.5s;
